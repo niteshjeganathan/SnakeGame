@@ -1,3 +1,0 @@
-/home/nitesh/ImGui-Projects/SnakeGame/build/CMakeFiles/SnakeGame.dir
-/home/nitesh/ImGui-Projects/SnakeGame/build/CMakeFiles/edit_cache.dir
-/home/nitesh/ImGui-Projects/SnakeGame/build/CMakeFiles/rebuild_cache.dir
