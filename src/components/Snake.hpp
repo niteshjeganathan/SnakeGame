@@ -36,7 +36,7 @@ private:
     Direction direction;
     Direction nextDirection;
     std::vector<ImVec2> body;
-    float gridSize = 15.0f;
+    float gridSize;
     std::shared_ptr<GameState> state;
 
 private:    

@@ -52,7 +52,7 @@ void WindowClass::Draw(std::string_view label)
 
     if(*state == GameState::GameOver) {
         ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10.0f, 10.0f));
-        gameOverScreen.DrawGameOverScreen(snake, score.GetScore(), treat);
+        gameOverScreen.DrawGameOverScreen(snake, score, treat);
         ImGui::PopStyleVar();
     }
 

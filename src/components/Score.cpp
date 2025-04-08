@@ -15,3 +15,7 @@ int Score::GetScore() {
 void Score::IncrementScore() {
     score++;
 }
+
+void Score::ResetScore() {
+    score = 0;
+}

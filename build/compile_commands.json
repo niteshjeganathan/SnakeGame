@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/main.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/main.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/main.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/render.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/render.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/render.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/render.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/Border.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/Border.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/Border.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/Border.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/Snake.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/Snake.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/Snake.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/Snake.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/Treat.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/Treat.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/Treat.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/Treat.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/IntroScreen.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/IntroScreen.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/IntroScreen.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/IntroScreen.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/GameOverScreen.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/GameOverScreen.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/GameOverScreen.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/GameOverScreen.cpp.o"
+},
+{
+  "directory": "/home/nitesh/ImGui-Projects/SnakeGame/build",
+  "command": "/usr/bin/c++ -DFMT_HEADER_ONLY=1 -DNOMINMAX -isystem /home/nitesh/ImGui-Projects/SnakeGame/build/vcpkg_installed/x64-linux/include -g -std=c++20 -Wall -Wextra -Wpedantic -Wshadow -Wunused -Wformat=2 -Wcast-align -Wconversion -Wnull-dereference -Wnon-virtual-dtor -Wold-style-cast -Woverloaded-virtual -Weffc++ -o CMakeFiles/SnakeGame.dir/src/components/Score.cpp.o -c /home/nitesh/ImGui-Projects/SnakeGame/src/components/Score.cpp",
+  "file": "/home/nitesh/ImGui-Projects/SnakeGame/src/components/Score.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/components/Score.cpp.o"
+}
+]

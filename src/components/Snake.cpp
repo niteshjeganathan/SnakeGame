@@ -7,6 +7,7 @@ Snake::Snake(std::shared_ptr<GameState> newState, Score& newScore) :
     direction(Direction::Idle), 
     nextDirection(Direction::Idle), 
     body(std::vector<ImVec2>{ ImVec2(0.0f, 0.0f) }), 
+    gridSize(15.0F),
     state(newState), 
     score(newScore)
 {}
@@ -31,13 +32,12 @@ void Snake::DrawSnake() {
     }
 
     ImDrawList* draw_list = ImGui::GetWindowDrawList();
-    ImU32 fill_color = IM_COL32(255, 165, 0, 255);
+    ImU32 fill_color = IM_COL32(255, 165, 0, 255); //Orange
 
     for (const ImVec2& segment : body) {
         ImVec2 bottom_right(segment.x + gridSize, segment.y + gridSize);
         draw_list->AddRectFilled(segment, bottom_right, fill_color, 3.0f);
     }
-    std::cout << std::endl;
 
     if (ImGui::IsKeyPressed(ImGuiKey_LeftArrow))  nextDirection = Direction::Left;
     if (ImGui::IsKeyPressed(ImGuiKey_RightArrow)) nextDirection = Direction::Right;
@@ -57,17 +57,7 @@ void Snake::Move() {
 
     moveTimer = 0.0f;
 
-    float step = gridSize;
-
-    bool is_aligned_x = (static_cast<int>(body[0].x) % static_cast<int>(gridSize)) == 0;
-    bool is_aligned_y = (static_cast<int>(body[0].y) % static_cast<int>(gridSize)) == 0;
-
-    if ((direction == Direction::Left || direction == Direction::Right) && is_aligned_x)
-        direction = nextDirection;
-    else if ((direction == Direction::Up || direction == Direction::Down) && is_aligned_y)
-        direction = nextDirection;
-    else if (direction == Direction::Idle && is_aligned_x && is_aligned_y) 
-        direction = nextDirection;
+    direction = nextDirection;
 
     CollisionWithBorder();
     CollisionWithBody();
@@ -76,10 +66,10 @@ void Snake::Move() {
         std::vector<ImVec2> previousPositions = body;
 
         switch (direction) {
-            case Direction::Left:  body[0].x -= step; break;
-            case Direction::Right: body[0].x += step; break;
-            case Direction::Up:    body[0].y -= step; break;
-            case Direction::Down:  body[0].y += step; break;
+            case Direction::Left:  body[0].x -= gridSize; break;
+            case Direction::Right: body[0].x += gridSize; break;
+            case Direction::Up:    body[0].y -= gridSize; break;
+            case Direction::Down:  body[0].y += gridSize; break;
             default: break;
         }
 

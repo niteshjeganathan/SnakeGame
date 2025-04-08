@@ -12,6 +12,7 @@ public:
 
 private:
     void DrawBorderUnit();
+    ImVec2 borderSize;
 };
 
 #endif

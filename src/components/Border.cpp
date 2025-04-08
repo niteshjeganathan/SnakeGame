@@ -1,35 +1,33 @@
 #include "Border.hpp"
 
-Border::Border() {}
+Border::Border() : borderSize(ImVec2(15.0F, 15.0F)) {}
 
 
 void Border::DrawBorder() {
     ImVec2 window_pos = ImGui::GetWindowPos();
     ImVec2 window_size = ImGui::GetWindowSize();
 
-    ImVec2 unit_size(15, 15);
-
     //Top border
-    for (float x = 0; x <= window_size.x - unit_size.x; x += unit_size.x) {
+    for (float x = 0; x <= window_size.x - borderSize.x; x += borderSize.x) {
         ImGui::SetCursorScreenPos(ImVec2(window_pos.x + x, window_pos.y));
         DrawBorderUnit();
     }
 
     //Bottom border
-    for (float x = 0; x <= window_size.x - unit_size.x; x += unit_size.x) {
-        ImGui::SetCursorScreenPos(ImVec2(window_pos.x + x, window_pos.y + window_size.y - unit_size.y));
+    for (float x = 0; x <= window_size.x - borderSize.x; x += borderSize.x) {
+        ImGui::SetCursorScreenPos(ImVec2(window_pos.x + x, window_pos.y + window_size.y - borderSize.y));
         DrawBorderUnit();
     }
 
     //Left border
-    for (float y = unit_size.y; y <= window_size.y - unit_size.y * 2; y += unit_size.y) {
+    for (float y = borderSize.y; y <= window_size.y - borderSize.y * 2; y += borderSize.y) {
         ImGui::SetCursorScreenPos(ImVec2(window_pos.x, window_pos.y + y));
         DrawBorderUnit();
     }
 
     //Right border
-    for (float y = unit_size.y; y <= window_size.y - unit_size.y * 2; y += unit_size.y) {
-        ImGui::SetCursorScreenPos(ImVec2(window_pos.x + window_size.x - unit_size.x, window_pos.y + y));
+    for (float y = borderSize.y; y <= window_size.y - borderSize.y * 2; y += borderSize.y) {
+        ImGui::SetCursorScreenPos(ImVec2(window_pos.x + window_size.x - borderSize.x, window_pos.y + y));
         DrawBorderUnit();
     }
 }

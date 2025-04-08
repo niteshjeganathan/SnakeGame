@@ -11,8 +11,8 @@
 class GameOverScreen {
 public:
     GameOverScreen(std::shared_ptr<GameState> state);
-    void DrawGameOverScreen(Snake& snake, int score, Treat& treat);
-    void GameOverPopup(Snake& snake, int score, Treat& treat);
+    void DrawGameOverScreen(Snake& snake, Score& score, Treat& treat);
+    void GameOverPopup(Snake& snake, Score& score, Treat& treat);
 
 private:
     std::shared_ptr<GameState> state;

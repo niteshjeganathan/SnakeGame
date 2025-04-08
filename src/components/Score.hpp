@@ -9,6 +9,7 @@ public:
     void DrawScore();
     int GetScore();
     void IncrementScore();
+    void ResetScore();
 
 private:
     int score;
