@@ -19,7 +19,9 @@ void IntroScreen::IntroPopup() {
 
         ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 10.0f); 
 
-        if (ImGui::Button("Start")) {
+        const auto returnPressed = ImGui::IsKeyPressed(ImGuiKey_Enter);
+
+        if (ImGui::Button("Start") || returnPressed) {
             isIntroOpen = false;
             ImGui::CloseCurrentPopup();
             *state = GameState::Running;

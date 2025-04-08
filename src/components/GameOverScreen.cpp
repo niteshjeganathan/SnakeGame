@@ -23,11 +23,14 @@ void GameOverScreen::GameOverPopup(Snake& snake, Score& score, Treat& treat) {
 
         ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 10.0f); 
 
-        if (ImGui::Button("Try Again!")) {
+        const auto returnPressed = ImGui::IsKeyPressed(ImGuiKey_Enter);
+
+        if (ImGui::Button("Try Again!") || returnPressed) {
             *state = GameState::Running;
             snake.initialized = false;
             treat.initialized = false;
             score.ResetScore();
+            ImGui::CloseCurrentPopup();
         }
 
         ImGui::PopStyleColor(3);
