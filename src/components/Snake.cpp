@@ -63,7 +63,9 @@ void Snake::Move() {
     CollisionWithBody();
 
     if (direction != Direction::Idle) {
-        std::vector<ImVec2> previousPositions = body;
+        for (size_t i = body.size() - 1; i > 0; --i) {
+            body[i] = body[i - 1];
+        }
 
         switch (direction) {
             case Direction::Left:  body[0].x -= gridSize; break;
@@ -71,10 +73,6 @@ void Snake::Move() {
             case Direction::Up:    body[0].y -= gridSize; break;
             case Direction::Down:  body[0].y += gridSize; break;
             default: break;
-        }
-
-        for (size_t i = 1; i < body.size(); ++i) {
-            body[i] = previousPositions[i - 1];
         }
     }
 }

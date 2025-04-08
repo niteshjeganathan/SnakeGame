@@ -13,7 +13,7 @@ public:
     ImVec2 position;
     bool initialized = false;
 private:
-    float gridSize = 15.0f; 
+    float gridSize; 
 };
 
 #endif

@@ -1,6 +1,6 @@
 #include "Treat.hpp"
 
-Treat::Treat() : position(ImVec2(0.0F, 0.0F)) {}
+Treat::Treat() : position(ImVec2(0.0F, 0.0F)), gridSize(15.0F) {}
 
 void Treat::DrawTreat() {
     if (!initialized) {
